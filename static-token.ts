@@ -1,4 +1,6 @@
-const apiUrl = 'https://firestore.googleapis.com/v1/projects/YOUR_PROJECT_ID/databases/(default)/documents/YOUR_COLLECTION_NAME';const staticToken = '<STATIC_TOKEN>';
+const apiUrl = 'https://firestore.googleapis.com/v1/projects/firestore-streamlit/databases/(default)/documents/posts/Apple';
+
+const staticToken = '<STATIC_TOKEN>';
 const headers = new Headers();
 headers.append('Authorization', `Bearer ${staticToken}`);
 const requestOptions: RequestInit = {
