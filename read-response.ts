@@ -1,5 +1,12 @@
+import * as fs from 'fs';
+
 const path: string = 'Data/response-sample.json'
 
-const jsonData = require(path);
+// Read the JSON file
+const jsonString = fs.readFileSync(path, 'utf8');
 
-console.log(jsonData);
+// Parse the JSON string to an object
+const jsonObject = JSON.parse(jsonString);
+
+// Use the converted object
+console.log(jsonObject);
