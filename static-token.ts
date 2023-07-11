@@ -1,9 +1,9 @@
-// Call API with Token, error
+// Office Script to Call Firestore using an API Token
 
 async function main(): void {
     const apiUrl = 'https://firestore.googleapis.com/v1/projects/firestore-streamlit/databases/(default)/documents/posts/Apple';
     
-    const staticToken = 'abc';
+    const staticToken = '----';
     const headers = new Headers();
     headers.append('Authorization', `Bearer ${staticToken}`);
     const requestOptions: RequestInit = {
