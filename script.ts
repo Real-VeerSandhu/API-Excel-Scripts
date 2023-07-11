@@ -1,4 +1,4 @@
-// Convert JSON to Table Data
+// Convert JSON to Table Data (Office Script)
 
 async function main(workbook: ExcelScript.Workbook): Promise <void> {
     // Get the active worksheet.
