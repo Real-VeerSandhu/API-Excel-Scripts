@@ -1,3 +1,5 @@
+// Get firestore data, NO TOKEN
+
 function main(workbook: ExcelScript.Workbook) {
     // Your code here
     let sheet = workbook.getActiveWorksheet();

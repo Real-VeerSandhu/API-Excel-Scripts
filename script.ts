@@ -1,3 +1,5 @@
+// Convert JSON to Table Data
+
 async function main(workbook: ExcelScript.Workbook): Promise <void> {
     // Get the active worksheet.
     let sheet = workbook.getActiveWorksheet();
