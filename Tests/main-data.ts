@@ -1,0 +1,34 @@
+interface MainData {
+    sNo: number;
+    leaseNo: string;
+    sequence: string;
+    homePhone: string | null;
+    cellPhone: string | null;
+    salesPerson: string;
+    vendor: string;
+    remainingTerm: number;
+    frequency: string;
+    sellingPrice: number;
+    gapPremium: number;
+    walkAwayPremium: number;
+    sellingPriceWithSp: number;
+    down: number;
+    adminFeetPine: number;
+    downRcd: number;
+    finAmtWithSp: number;
+    finAmtWithoutSp: number;
+    gap: number;
+    endOfTerm: number;
+    applicableTaxes: number;
+    fico: number;
+    bni: number;
+    creditRating: string;
+    status1: string;
+    status2: string;
+    papDt: string;
+    reserveRelease: number;
+    contractType: string;
+    walkAway: number;
+    isIncomplete: boolean;
+    id: string;
+}
