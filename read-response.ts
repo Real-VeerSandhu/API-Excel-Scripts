@@ -6,6 +6,6 @@ const path: string = 'Data/response-sample.json'
 const jsonString: string = fs.readFileSync(path, 'utf8');
 
 // Parse JSON string to an object
-const jsonObject = JSON.parse(jsonString);
+const jsonObject: object = JSON.parse(jsonString);
 
 console.log(jsonObject);
