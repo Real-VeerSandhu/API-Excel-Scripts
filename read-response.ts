@@ -2,11 +2,10 @@ import * as fs from 'fs';
 
 const path: string = 'Data/response-sample.json'
 
-// Read the JSON file
-const jsonString = fs.readFileSync(path, 'utf8');
+// Read JSON file
+const jsonString: string = fs.readFileSync(path, 'utf8');
 
-// Parse the JSON string to an object
+// Parse JSON string to an object
 const jsonObject = JSON.parse(jsonString);
 
-// Use the converted object
 console.log(jsonObject);
