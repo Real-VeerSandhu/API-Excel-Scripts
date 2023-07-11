@@ -1,2 +1,2 @@
 # API Excel Scripts
-A collection of Excel scripts (TS) that access Google Cloud Firestore and display data in tables.
+A collection of Office Scripts (TS) that read a Google Cloud Firestore API and display JSON data in Excel
