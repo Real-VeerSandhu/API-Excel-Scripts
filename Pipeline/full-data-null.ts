@@ -1,4 +1,4 @@
-interface FullData1 {
+interface FullDataNull {
     id?: string | null;
     sNo?: number | null;
     leaseNo?: string | null;

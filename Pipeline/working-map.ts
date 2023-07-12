@@ -66,9 +66,6 @@ interface FullData1 {
     maintainedBy?: string | null; // MaintainedBy
     partOfMultipleUnits?: string | null;
   }
-  
-
-
 function tObject(input: FullData1): FullData1 {
     const transformedObject: FullData1 = {
         id: null,
