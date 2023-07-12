@@ -1,6 +1,7 @@
 // Office Script to Fetch, Load, and Write data into Excel
 
-async function main(workbook: ExcelScript.Workbook) {
+// async function main(workbook: ExcelScript.Workbook) ---> use in Office Script
+async function main() {
     let sheet = workbook.getActiveWorksheet();
 
     var requestOptions: RequestInit = {
