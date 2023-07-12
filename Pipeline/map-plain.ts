@@ -107,10 +107,11 @@ const apiResults: Object[] = [
     }
 ]
 
+const listData = []
+
 for (let i in apiResults) {
-    console.log(mergeObject(apiResults[i]));
+    listData.push(mergeObject(apiResults[i]))
     
 }
 
-// console.log(mergeObject(apiResults));
-
+console.log(listData)
