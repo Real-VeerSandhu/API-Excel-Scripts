@@ -1,4 +1,4 @@
-// Office Script to Fetch, Load, and Write data into Excel
+// Office Script to Fetch, Load, and Write data into Excel (NOW OLD, DO NOT USE)
 
 // Main function
 async function main(workbook: ExcelScript.Workbook) {
