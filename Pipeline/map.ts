@@ -66,7 +66,19 @@ interface FullData {
     maintainedBy?: string | null; // MaintainedBy
     partOfMultipleUnits?: string | null;
   }  
+  
+function createNullObject<T>(keys: (keyof T)[]): T {
+const nullObject: Partial<T> = {};
+keys.forEach((key) => {
+    nullObject[key] = null;
+});
+return nullObject as T;
+}
 
+const fullDataKeys = Object.keys({} as FullData);
+const nullData: FullData = createNullObject<FullData>(fullDataKeys as (keyof FullData)[]);
+  
+  
 
 const webInput: FullData = {
     id: 'jasdhflr',
