@@ -1,3 +1,5 @@
+// Simple object transformaiton example (used in working-map)
+
 interface FullMap {
 key1?: any;
 key2?: any;
