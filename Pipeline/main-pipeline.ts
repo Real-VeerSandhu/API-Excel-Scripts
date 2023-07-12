@@ -11,11 +11,11 @@ async function main(workbook: ExcelScript.Workbook) {
 
     try {
         // dev link works
-        // const response = await fetch("https://us-central1-lloop-debug.cloudfunctions.net/gps/legacy-contract/get-all-legacy-contracts?token=cHJpZGVHcm91cEVudGVycHJpc2U=&timeStamp=2023-07-11T14:17:11.493Z", requestOptions);
+        // const response = await fetch("add dev link", requestOptions);
 
 
       // production link (works on default timeStamp + 2023-07-01 + 2023-06-21)
-      const response = await fetch("https://us-central1-lloop-21cf0.cloudfunctions.net/gps/legacy-contract/get-all-legacy-contracts?token=cHJpZGVHcm91cEVudGVycHJpc2UtcHJvZA==&timeStamp=2023-07-01T14:17:11.493Z", requestOptions);
+      const response = await fetch("add prod link", requestOptions);
 
 
         let json: MainData = await response.json(); // convert reponse to JSON

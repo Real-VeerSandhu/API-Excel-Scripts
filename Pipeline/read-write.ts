@@ -11,7 +11,7 @@ async function main(workbook: ExcelScript.Workbook) {
 
 
     try {
-        const response = await fetch("https://us-central1-lloop-debug.cloudfunctions.net/gps/legacy-contract/get-all-legacy-contracts?token=cHJpZGVHcm91cEVudGVycHJpc2U=&timeStamp=2023-07-11T14:17:11.493Z", requestOptions);
+        const response = await fetch("add dev link", requestOptions);
         
 
         let json: MainData = await response.json(); // convert reponse to JSON
