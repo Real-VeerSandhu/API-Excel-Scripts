@@ -1,21 +1,25 @@
 interface FullMap {
-    key1?: any;
-    key2?: any;
-    key3?: any;
-    // ...
-  }
-  
+key1?: any;
+key2?: any;
+key3?: any;
+// ...
+}
+
 function transformObject(input: FullMap): FullMap {
-const transformedObject: FullMap = {} as FullMap;
+    const transformedObject: FullMap = {
+        key1: null,
+        key2: null,
+        key3: null,
+    };
 
-for (const key in input) {
-    if (Object.prototype.hasOwnProperty.call(input, key)) {
-    transformedObject[key] = input[key] !== undefined ? input[key] : null;
+    for (const key in input) {
+        if (Object.prototype.hasOwnProperty.call(input, key)) {
+        transformedObject[key] = input[key];
+        }
     }
-}
 
-return transformedObject;
-}
+    return transformedObject;
+    }
 
 // Example usage
 const input1: FullMap = {
