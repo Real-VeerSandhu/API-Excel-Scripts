@@ -146,6 +146,7 @@ function tObject(input: FullData1): FullData1 {
 }
 
 
+
 // Example usage
 const jsonOut: FullData1 = {
     id: 'twelve',

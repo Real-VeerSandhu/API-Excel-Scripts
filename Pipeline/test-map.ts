@@ -88,5 +88,29 @@ const noInterInput: Object = {
     maintainedBy: 'me'
 };
 
-console.log(mergeObject(noInterInput));
+const apiResults: Object[] = [
+    {
+        id: 'twelve',
+        sNo: 234,
+        leaseNo: 'dsfeef',
+        sequence: 'sdfi4',
+        applicant: 'monkey',
+        maintainedBy: 'me'
+    },
+    {
+        creditRating: 'onTop',
+        misc: 3234,
+        releaseDate: 'fourteen',
+        bni: '52jl3',
+        rental: '235j325',
+        gap: '4930j'
+    }
+]
+
+for (let i in apiResults) {
+    console.log(mergeObject(apiResults[i]));
+    
+}
+
+// console.log(mergeObject(apiResults));
 
