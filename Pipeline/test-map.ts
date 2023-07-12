@@ -1,3 +1,5 @@
+// same as working-map but without interface
+
 function mergeObject(input: Object): Object {
     const transformedObject: Object = {
         id: null,

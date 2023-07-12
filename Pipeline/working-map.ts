@@ -1,3 +1,5 @@
+// merge fetched object and full data object
+
 interface FullData1 {
     id?: string | null;
     sNo?: number | null;
