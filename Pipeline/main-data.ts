@@ -1,4 +1,4 @@
-interface MainData {
+interface MainDataRaw {
     sNo: number;
     leaseNo: string;
     sequence: string;

@@ -68,7 +68,7 @@ interface FullData1 {
     maintainedBy?: string | null; // MaintainedBy
     partOfMultipleUnits?: string | null;
   }
-function tObject(input: FullData1): FullData1 {
+function trObject(input: FullData1): FullData1 {
     const transformedObject: FullData1 = {
         id: null,
         sNo: null,
@@ -157,5 +157,5 @@ const jsonOut: FullData1 = {
     maintainedBy: 'me'
 };
 
-console.log(tObject(jsonOut));
+console.log(trObject(jsonOut));
 
