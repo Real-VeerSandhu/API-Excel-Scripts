@@ -77,6 +77,7 @@ const webInput: FullData = {
     // ...
 };
 
+// Default object with all keys set to undefined
 const defaultObject: FullData = Object.keys(webInput).reduce((obj, key) => {
     obj[key] = undefined;
     return obj;
