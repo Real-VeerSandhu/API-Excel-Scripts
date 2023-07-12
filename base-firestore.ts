@@ -1,4 +1,4 @@
-// Get firestore data, NO TOKEN
+// Get firestore data, PLAIN API CALL
 
 function main(workbook: ExcelScript.Workbook) {
     // Your code here
