@@ -9,7 +9,6 @@ async function main(workbook: ExcelScript.Workbook) {
         redirect: 'follow' as RequestRedirect, // Cast the string to RequestRedirect enum type
     };
 
-
     try {
         const response = await fetch("add dev link", requestOptions);
 
