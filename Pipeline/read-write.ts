@@ -12,7 +12,6 @@ async function main(workbook: ExcelScript.Workbook) {
 
     try {
         const response = await fetch("add dev link", requestOptions);
-        
 
         let json: MainData = await response.json(); // convert reponse to JSON
         type MainData = Object[]; // make map method available
