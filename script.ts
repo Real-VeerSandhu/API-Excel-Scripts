@@ -42,7 +42,6 @@ interface JSONData {
 }
 
 
-
 /**
  * Turns a JSON object into an array to be used as a table row.
  */
