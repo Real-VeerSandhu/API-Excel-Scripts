@@ -5,7 +5,7 @@ key1?: any;
 key2?: any;
 key3?: any;
 // ...
-}
+} 
 
 function transformObject(input: FullMap): FullMap {
     const transformedObject: FullMap = {
