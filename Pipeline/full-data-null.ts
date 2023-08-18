@@ -66,3 +66,5 @@ interface FullDataNull {
     maintainedBy?: string | null; // MaintainedBy
     partOfMultipleUnits?: string | null;
   }    
+
+  
