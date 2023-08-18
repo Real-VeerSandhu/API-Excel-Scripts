@@ -13,9 +13,6 @@ async function main(workbook: ExcelScript.Workbook): Promise <void> {
 
     console.log(JSON.stringify(json));
 
-    // Display the current worksheet's name.
-    console.log(sheet.getName());
-
     // JSON --> TABLE
 
     // Determine the data's shape by getting the properties in one object.
