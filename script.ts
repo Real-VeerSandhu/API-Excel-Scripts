@@ -19,7 +19,6 @@ async function main(workbook: ExcelScript.Workbook): Promise <void> {
     // JSON --> TABLE
 
     // Determine the data's shape by getting the properties in one object.
-    // This assumes all the JSON objects have the same properties.
     const columnNames = getPropertiesFromJson(json[0]);
 
     // Create the table headers using the property names.
