@@ -1,13 +1,13 @@
 // Office Script to convert JSON to tabular data
 
 async function main(workbook: ExcelScript.Workbook): Promise <void> {
-    // Get the active worksheet.
+    // Get active worksheet.
     let sheet = workbook.getActiveWorksheet();
 
     // sample API
     let fetchResult = await fetch('https://jsonplaceholder.typicode.com/posts?userId=1')
 
-    // Convert the returned data to the expected JSON structure.
+    // Convert the returned data to the JSON structure.
     let json: JSONData = await fetchResult.json();
     type JSONData = Object[]; // make map method available
 
@@ -26,7 +26,6 @@ async function main(workbook: ExcelScript.Workbook): Promise <void> {
 
     const newTable = sheet.addTable(headerRange, true);
 
-    // Add each object in the array of JSON objects to the table.
     const tableValues = json.map(row => convertJsonToRow(row));
     newTable.addRows(-1, tableValues);
 }
