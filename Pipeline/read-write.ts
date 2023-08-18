@@ -97,6 +97,6 @@ function getPropertiesFromJson(obj: object) {
     // Loop over each property in the object and store the property name in an array.
     for (let property in obj) {
         propertyArray.push(property);
-    }
+    } 
     return propertyArray;
 }
