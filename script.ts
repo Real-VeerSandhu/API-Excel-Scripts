@@ -21,11 +21,9 @@ async function main(workbook: ExcelScript.Workbook): Promise <void> {
     // Determine the data's shape by getting the properties in one object.
     const columnNames = getPropertiesFromJson(json[0]);
 
-    // Create the table headers using the property names.
     const headerRange = sheet.getRangeByIndexes(0, 0, 1, columnNames.length);
     headerRange.setValues([columnNames]);
 
-    // Create a new table with the headers.
     const newTable = sheet.addTable(headerRange, true);
 
     // Add each object in the array of JSON objects to the table.
