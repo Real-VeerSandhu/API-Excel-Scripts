@@ -145,8 +145,6 @@ function trObject(input: FullData1): FullData1 {
     return transformedObject;
 }
 
-
-
 // Example usage
 const jsonOut: FullData1 = {
     id: 'twelve',
