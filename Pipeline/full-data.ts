@@ -65,4 +65,4 @@ interface FullDataPlain {
     mileageAllowance: number;
     maintainedBy: string; // MaintainedBy
     partOfMultipleUnits: string
-}
+} 
