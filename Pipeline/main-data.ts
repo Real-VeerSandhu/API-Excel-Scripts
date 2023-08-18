@@ -31,4 +31,4 @@ interface MainDataRaw {
     walkAway: number;
     isIncomplete: boolean;
     id: string;
-}
+} 
