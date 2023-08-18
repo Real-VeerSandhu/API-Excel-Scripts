@@ -40,7 +40,6 @@ interface JSONData {
 function convertJsonToRow(obj: object) {
     const array: (string | number)[] = [];
 
-    // Loop over each property and get the value. Their order will be the same as the column headers.
     for (let value in obj) {
         array.push(obj[value]);
     }
@@ -53,7 +52,6 @@ function convertJsonToRow(obj: object) {
 function getPropertiesFromJson(obj: object) {
     const propertyArray: string[] = [];
 
-    // Loop over each property in the object and store the property name in an array.
     for (let property in obj) {
         propertyArray.push(property);
     }
