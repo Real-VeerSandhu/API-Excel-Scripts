@@ -15,7 +15,6 @@ async function main(workbook: ExcelScript.Workbook): Promise <void> {
 
     // JSON --> TABLE
 
-    // Determine the data's shape by getting the properties in one object.
     const columnNames = getPropertiesFromJson(json[0]);
 
     const headerRange = sheet.getRangeByIndexes(0, 0, 1, columnNames.length);
